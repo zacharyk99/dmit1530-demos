@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    font-size: 100%;
+}
+
+h1 {
+    font-size: 48px;
+}
+section {
+    width: 960px;
+    margin: 50px auto;
+}
+.box {
+  
+    /* This is the default value. It takes the given width (and/or height) and adds the border and padding spacing to the overall width (and/or height). */
+}
+.border-box {
+   
+    /* Now the given width and height values are applied to the content, borders and padding. All included. */
+}
+.box > p {
+    background-color: #3e5899;
+    color: #f2eff0;
+}
