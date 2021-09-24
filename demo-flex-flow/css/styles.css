@@ -1,0 +1,56 @@
+body {
+    color: #fff;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 32px;
+    margin: 16px;
+}
+
+h2 {
+    background-color: #008ecc;
+    font-size: 24px;
+    padding: 8px 16px;
+}
+
+.item {
+    border: 1px solid #fff;
+    margin: 0 16px 16px;
+}
+
+.content {
+    padding: 16px;
+}
+
+/********* flexbox *********/
+
+.flex-container {
+    display: flex;
+
+    /**default of flex container property
+        justify-content: flex-start;
+        align-items: stretch;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    **/
+
+
+    /** flex-wrap **/
+    flex-flow: nowrap; /*default*/
+    /* flex-flow: wrap; */
+    /* flex-flow: wrap-reverse; */
+
+    /** flex-direction **/
+    flex-flow: row; /*default*/ 
+    flex-flow: row-reverse;
+    flex-flow: column;
+    flex-flow: column-reverse;
+
+    /** flex-direction and flex-wrap **/
+    flex-flow: nowrap row;
+    flex-flow: row-reverse wrap;
+    flex-flow: column-reverse wrap-reverse;
+}
