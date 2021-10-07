@@ -1,0 +1,72 @@
+/** Generic CSS, mobile-first **/
+/** All elements will fit edge-to-edge (appear to be) of the browser screen and will grow as the screen increases **/
+
+body {
+    /** Add base body font properties here **/
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+header,
+footer {
+    background-color: #115194;
+    margin-bottom: 24px;
+}
+
+header > h1 {
+    padding: 48px;
+}
+
+nav {
+    background: teal;
+    padding: 16px;
+}
+
+.banner {
+    background-color: aquamarine;
+    margin-bottom: 24px;
+    padding: 288px 16px;
+}
+
+.promo {
+    background-color: lavender;
+    margin-bottom: 24px;
+    padding: 128px 16px;
+    /** liquid or fluid layouts are done in % so they grow or shrink with the screen **/
+
+    /** if you have 3 columns = 100/3 = 33.33% so to add space you would subtract the space needed from 100% and then divide by # of columns **/
+    /*width: 32%;*/ /** width: calc(96%/3);  - place it in a row as thirds **/
+    width: 100%; /** give the promos - 100% of the available space to stack in columns **/
+}
+
+footer {
+    padding: 48px;
+}
+
+.flex-container {
+    display: flex;
+    /* justify-content: space-between; */
+    flex-flow: column wrap;
+}
+
+@media screen and (min-width: 860px) {
+    .promo {
+        width: 32%;
+    }
+
+    .flex-container {
+        flex-flow: row wrap;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    /** The CSS rules in here will only apply to screens 1366px and up **/
+    .container {
+        /** the width the container should be smaller or the same size of the condition to allow margins on the left and right **/
+        width: 1200px;
+        margin: 0 auto;
+    }
+}

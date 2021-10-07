@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main-content {
+    width: 65%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 16px;
+}
+
+.main-content p, .main-content img:last-child {
+    width: 48%;
+}
+
+.main-content div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-content div > img {
+    height: 50%;
+}
+
+.main-content > img {
+    padding-bottom: 10px;
+}
+
+aside {
+    width: 33%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    height: 33%;
+}
+
+section {
+    display: flex;
+}

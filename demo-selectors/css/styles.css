@@ -1,0 +1,67 @@
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+section {
+    padding: 3rem;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+
+/** :nth child selector - selects elements based on their positions as a child element in any parent element **/
+
+section:first-child {
+    background-color: crimson;
+}
+
+section:last-child {
+    background-color: indigo;
+}
+
+section:nth-child(2) {
+    background-color: tomato;
+}
+
+section:nth-child(3) {
+    background-color: khaki;
+}
+
+section:nth-last-child(3) {
+    background-color: mediumspringgreen;
+}
+
+section:nth-last-child(2) {
+    background-color: steelblue;
+}
+
+/** The section inside the footer element is both the first child and the last child of the parent element. It's also the only section on the page that is an only child. **/
+
+section:only-child {
+    background-color: seashell;
+    color: slategray;
+}
+
+/** nth of type selecter (nth-of-type()) - select elements based on their position as a child as that type selector **/
+/*8 The nth type of selector will work to sector our paragrap (any tpe of child element) **/
+
+p:first-of-type {
+    font-family: sans-serif;
+    font-weight: bold;
+    text-shadow: 4px 5px 2px lightslategray;
+}
+
+p:last-of-type {
+    font-family: serif;
+    font-size: 1rem;
+}
+/** removes second paragraph element from the first section only **/
+section:nth-child(1) > p:nth-of-type(2) {
+    display: none;
+}
+/** removes all second paragraph elements **/
+p:nth-of-type(2) {
+    display:none;
+}

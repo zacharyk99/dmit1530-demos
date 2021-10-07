@@ -1,0 +1,58 @@
+ul.flex {
+    min-width: 940px;
+    margin: 30px;
+    border: 1px solid #000;
+    background-color: #eee;
+}
+
+li {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.a {
+    background-color: #ff6347;
+}
+
+.b {
+    background-color: #ff8c00;
+}
+
+.c {
+    background-color: #ffd700;
+}
+
+.d {
+    background-color: #3cb371;
+    /* font-size: 72px; */
+}
+
+.e {
+    background-color: #1e90ff;
+}
+
+.f {
+    background-color: #9370db;
+}
+
+/* **************************** flexbox ***************** */
+ul.flex {
+    /* Flexbox responds to the content and their width first and then it distributes the left over space. Add extra text to the first li to demonstrate this.*/
+    display: flex;
+
+    /* The justify-content property allows us to distributes the leftover space on the main axis (x-axis). Flex-start is the default value.*/
+    justify-content: flex-start;
+    /* justify-content: flex-end; */
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+
+    /* The align items property allows the distribution of space on the cross axis (y-axis). The tallest items defines the hieght of the whole row and all other items stretch to fit. Therefore the default value is stretch. Add a larger font size to one item to demonstrate this.*/
+    align-items: stretch;
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    /* align-items: center; */
+    /* align-items: baseline; */
+}

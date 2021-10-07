@@ -1,0 +1,36 @@
+:root, /** :root = html **/
+html {
+  /** base of 10 **/
+  /* font-size: 62.5%; */
+}
+
+body {
+    font-size: 100%; /** 16px **/
+    background: lightcyan;
+    margin: 0;
+    padding: 2%;
+    font-family: sans-serif;
+    line-height: 1.5;
+  }
+  
+  h2{ font-size: 2.25rem; }
+  
+  div { padding: 2%; }
+  
+  .parent {
+    background: #457c7a;
+    font-size: 1.125rem; /** 18px/16px = rem unit size **/
+  }
+  
+  .child {
+    background-color: #685d79;
+    font-size: 2rem;
+  }
+  
+  .child-two {
+    background-color: #ab6c82;
+  }
+  .child-three {
+    background-color: #d8737f;
+    font-size: 0.875rem;
+  }
